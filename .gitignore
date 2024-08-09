@@ -4,6 +4,18 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# Ignorar todos los archivos .pem en la carpeta resources
+src/main/resources/*.pem
+
+# Ignorar archivos específicos
+src/main/resources/device.pem.crt
+src/main/resources/private.pem.key
+src/main/resources/root-CA.crt
+
+# Ignorar todos los archivos de propiedades, excepto application.properties
+src/main/resources/*.properties
+!src/main/resources/application.properties
+
 ### STS ###
 .apt_generated
 .classpath
